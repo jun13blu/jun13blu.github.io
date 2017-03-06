@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar*/
+nav {
+    background-color: black;
+    padding: 5px 0;
+    display: table;
+    width: 100%;
+}
+
+nav a{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-name {
+    margin: 0 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.8em;
+}
+
+.site-name .blue {
+    color: dodgerblue;
+}
+
+.nav-link {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+nav ul li {
+    padding: 0 5px;
+    margin: 0;
+    margin-top: -5px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.9em;
+        color: lightgrey;
+        transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: dodgerblue;
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    background-color: black;
+    background: url(https://unsplash.it/1000/400?random&blur) no-repeat center;
+    background-size: cover;
+    height: 20em;
+    margin: 0;
+    padding: 0;
+}
+
+header .white-layer {
+    display: table;
+    height: inherit;
+    width: inherit;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    display: table-cell;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    color: #111;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.2)
+}
+
+header h1 small {
+    font-size: 0.6em;
+}
+
+/*about*/
+
+#about {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, dodgerblue, lightblue);
+}
+
+
+#about h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    font-weight: 300;
+    padding: 10px 0;
+}
+.row-3 {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.row-3 .col {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+    margin: 0;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 992px) {
+    .row-3 .col {
+        width: 100%;
+    }
+}
+
+.row-3 .col .img-outer {
+    position: relative;
+    display: table;
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.row-3 .col img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.row-3 .col h3 {
+    text-align: center;
+    color: paleturquoise;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.row-3 .col p {
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+/*projects*/
+
+
+#projects {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #EFEFBB, #D4D3DD);
+}
+
+
+#projects h2 {
+    text-align: center;
+    color: #222;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    padding: 10px 0;
+}
+
+.row-4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.row-4 .col {
+    display: inline-block;
+    width: 24.7%;
+    padding: 10px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .row-4 .col {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row-4 .col {
+        width: 100%;
+    }
+}
+
+.row-4 .col .s-shot {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.row-4 .col .s-shot div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 180px;
+    border: 1px solid white;
+    transition: width 0.5s;
+    transition: height 0.5s;
+    padding: 0;
+    margin: 0;
+}
+
+.row-4 .col:nth-child(1) .s-shot div {
+    background: linear-gradient(to bottom right, #C21500, #ffc500);
+}
+
+.row-4 .col:nth-child(2) .s-shot div {
+    background: linear-gradient(to bottom right, #DE6262, #FFB88C);
+}
+
+.row-4 .col:nth-child(3) .s-shot div {
+    background: linear-gradient(to bottom right, #182848, #4b6cb7);
+}
+
+.row-4 .col:nth-child(4) .s-shot div {
+    background: linear-gradient(to bottom right, #3D7EAA, #FFE47A);
+}
+
+.row-4 .col .s-shot div:hover {
+    width: 279px;
+    height: 186px;
+}
+
+.row-4 .col .s-shot div .darken {
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s;
+}
+
+.row-4 .col .s-shot div .darken:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.row-4 .col .s-shot div .darken p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: border 0.5s;
+}
+
+.row-4 .col .s-shot div .darken p:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.row-4 .col h3 {
+    text-align: center;
+    color: #222;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+/*contact*/
+
+#contact {
+    background: linear-gradient(to bottom right, #232526, #414345);
+    width: 100%;
+    padding: 5px;
+}
+
+#contact h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+#contact label {
+    display: inline-block;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+}
+
+#contact .input-set {
+    text-align: center;
+    padding: 10px;
+}
+
+#contact .input-col {
+    display: inline-block;
+    padding: 10px;
+}
+
+#contact input {
+    display: inline-block;
+    background: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    transition: border 0.5s;
+}
+
+#contact input:hover {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#contact textarea {
+    background: none;
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    transition: border 0.5s;
+}
+
+@media only screen and (max-width: 576px) {
+    #contact textarea {
+        width: 90%;
+    }
+}
+
+#contact textarea:hover {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#contact form .btn {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#contact input[type=submit], #contact input[type=reset] {
+    border-radius: 0;
+    margin: 5px;
+    transition: background 0.1s;
+    transition: color 0.1s;
+}
+
+#contact input[type=submit]:active, #contact input[type=reset]:active {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+#social-media {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#social-media ul {
+    padding: 15px 0;
+    margin: 0;
+}
+
+#social-media ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 5px;
+    margin: 0;
+}
+
+#social-media ul li a {
+    position: relative;
+    background: none;
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: color 0.5s;
+    transition: border 0.5s;
+    transition: background 0.5s;
+}
+
+#social-media ul li a:hover {
+    color: #444;
+    border: 1px solid white;
+    background: white;
+}
+
+#social-media ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    padding: 5px 0;
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+footer p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 100;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: right;
+}
